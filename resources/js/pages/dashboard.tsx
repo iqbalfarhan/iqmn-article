@@ -83,7 +83,7 @@ const Dashboard: FC<DashboardProps> = ({ posts, counts }) => {
           </Card>
         </div>
         <HeadingSmall title="Postingan terakhir" description="Ini dia 4 postingan terakhir yang lo buat." />
-        <div className="grid gap-6 md:grid-cols-3">
+        <div className="grid gap-6 md:grid-cols-4">
           {posts.map((post) => (
             <PostItem post={post} key={post.id} />
           ))}

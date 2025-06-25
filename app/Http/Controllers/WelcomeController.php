@@ -11,7 +11,7 @@ class WelcomeController extends Controller
     public function home()
     {
         return Inertia::render('welcome/index', [
-            'posts' => Post::with('user')->wherePublished(true)->orderBy('updated_at')->get()
+            'posts' => Post::with('user')->wherePublished(true)->orderBy('updated_at')->latest()->get()
         ]);
     }
 
