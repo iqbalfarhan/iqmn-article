@@ -19,7 +19,7 @@ class PostController extends Controller
         $user_id = Auth::id();
 
         return Inertia::render('post/index', [
-            'posts' => Post::whereUserId($user_id)->with('user')->orderByDesc('published')->get(),
+            'posts' => Post::whereUserId($user_id)->with('user')->orderByDesc('published')->latest()->get(),
         ]);
     }
 
