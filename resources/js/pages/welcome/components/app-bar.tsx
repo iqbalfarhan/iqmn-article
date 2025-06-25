@@ -3,7 +3,7 @@ import { Button } from '@/components/ui/button';
 import { useAppearance } from '@/hooks/use-appearance';
 import { SharedData } from '@/types';
 import { Link, usePage } from '@inertiajs/react';
-import { Github, LogIn, Monitor, Moon, Sun } from 'lucide-react';
+import { Github, Monitor, Moon, Sun } from 'lucide-react';
 
 const AppBar = () => {
   const { auth } = usePage<SharedData>().props;
@@ -43,11 +43,11 @@ const AppBar = () => {
           </Button>
         ) : (
           <>
-            <Button variant={'outline'} asChild>
+            {/* <Button variant={'outline'} asChild>
               <Link href={route('login')}>
                 <LogIn /> Log in
               </Link>
-            </Button>
+            </Button> */}
             {/* <Button variant={'outline'} asChild>
               <Link href={route('register')}>
                 <UserPlus /> Register

@@ -23,8 +23,8 @@ interface LoginProps {
 
 export default function Login({ status, canResetPassword }: LoginProps) {
   const { data, setData, post, processing, reset } = useForm<Required<LoginForm>>({
-    email: 'iqbalfarhan1996@gmail.com',
-    password: 'adminoke',
+    email: '',
+    password: '',
     remember: false,
   });
 
