@@ -18,9 +18,9 @@ const AppBar = () => {
 
       <div className="flex flex-row items-center justify-between space-x-1.5 print:hidden">
         <Button size={'icon'} variant={'ghost'} asChild>
-          <Link href={'https://github.com/iqbalfarhan/iqmn-articles'} target="_blank">
+          <a href={'https://github.com/iqbalfarhan/iqmn-article'} target="_blank">
             <Github />
-          </Link>
+          </a>
         </Button>
         <Button
           size={'icon'}

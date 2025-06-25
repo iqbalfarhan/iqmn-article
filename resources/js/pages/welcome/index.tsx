@@ -1,6 +1,7 @@
 import { Input } from '@/components/ui/input';
 import WelcomeLayout from '@/layouts/welcome-layout';
 import { Post } from '@/types';
+import { Head } from '@inertiajs/react';
 import { FC, useState } from 'react';
 import ArticleItem from './components/article-item';
 
@@ -12,6 +13,7 @@ const Welcome: FC<WelcomeProps> = ({ posts }) => {
   const [cari, setCari] = useState<string | undefined>(undefined);
   return (
     <WelcomeLayout>
+      <Head title="List post" />
       <div className="mx-auto max-w-6xl gap-4 space-y-8 py-4">
         <div className="flex items-center justify-between">
           <h1 className="text-4xl font-bold">Postingan terakhir</h1>

@@ -1,1 +1,0 @@
-import{j as s}from"./app-CaMb1ExZ.js";import{S as e}from"./scroll-area-Qgecal0r.js";import a from"./app-bar-CJ-GMU1X.js";const l=({children:r})=>s.jsx(e,{className:"h-screen max-h-screen",children:s.jsxs("div",{className:"mx-auto w-full",children:[s.jsx(a,{}),s.jsx("div",{className:"p-8",children:r})]})});export{l as W};
