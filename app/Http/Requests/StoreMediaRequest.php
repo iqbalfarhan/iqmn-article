@@ -23,7 +23,7 @@ class StoreMediaRequest extends FormRequest
     {
         return [
             'file' => 'required|array',
-            'file.*' => 'required|image|max:2048|mimes:jpg,jpeg,png,gif,svg',
+            'file.*' => 'required|image|max:2048|mimes:jpg,jpeg,png,gif,svg,webp',
         ];
     }
 

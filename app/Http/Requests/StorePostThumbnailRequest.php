@@ -22,7 +22,7 @@ class StorePostThumbnailRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif|max:2048',
+            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,webp|max:2048',
         ];
     }
 
@@ -30,7 +30,7 @@ class StorePostThumbnailRequest extends FormRequest
     {
         return [
             'image.image' => 'The image field must be an image.',
-            'image.mimes' => 'The image field must be a file of type: jpeg, png, jpg, gif.',
+            'image.mimes' => 'The image field must be a file of type: jpeg, png, jpg, gif, webp.',
             'image.max' => 'The image field must be less than 2048 kilobytes.',
         ];
     }
